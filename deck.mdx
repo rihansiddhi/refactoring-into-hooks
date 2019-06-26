@@ -1,0 +1,253 @@
+import { Head } from 'mdx-deck'
+
+import Header from './components/header'
+import Video from './components/video'
+import Image from './components/image'
+import LiveCode from './components/live-code'
+
+import theme from './theme'
+export { default as theme } from './theme'
+
+<Head>
+  <title>Refactoring Into React Hooks</title>
+</Head>
+
+# Refactoring Into React Hooks
+
+---
+
+## Why
+
+- They [separate](https://medium.com/@dan_abramov/making-sense-of-react-hooks-fdbde8803889) stateful logic
+- They are [composable](https://reactjs.org/docs/hooks-custom.html) functions
+- They keep our component hierarchy [flat](https://itnext.io/why-reacts-hooks-api-is-a-game-changer-8731c2b0a8c)
+- They allow us to go fully [functional](https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc)
+- They are now [stable](https://reactjs.org/blog/2019/02/06/react-v16.8.0.html)
+
+---
+
+## Let's refactor...
+
+1. [_State_](#6)
+2. Refs and Instance Attributes
+3. Lifecycle Methods
+4. Higher-Order Components
+5. Render Props
+6. Context API
+7. Reducers
+8. Redux
+
+---
+
+<LiveCode
+  title="State - Before"
+  code={require('!raw-loader!./live-coding/state/before')}
+/>
+
+---
+
+<LiveCode
+  title="State - After"
+  code={require('!raw-loader!./live-coding/state/after')}
+/>
+
+---
+
+## Let's refactor...
+
+1. State
+2. [_Refs and Instance Attributes_](#9)
+3. Lifecycle Methods
+4. Higher-Order Components
+5. Render Props
+6. Context API
+7. Reducers
+8. Redux
+
+---
+
+<LiveCode
+  title="Refs - Before"
+  code={require('!raw-loader!./live-coding/refs/before')}
+/>
+
+---
+
+<LiveCode
+  title="Refs - After"
+  code={require('!raw-loader!./live-coding/refs/after')}
+/>
+
+---
+
+## Let's refactor...
+
+1. State
+2. Refs and Instance Attributes
+3. [_Lifecycle Methods_](#12)
+4. Higher-Order Components
+5. Render Props
+6. Context API
+7. Reducers
+8. Redux
+
+---
+
+<LiveCode
+  title="Lifecycle - Before"
+  code={require('!raw-loader!./live-coding/lifecycle/before')}
+/>
+
+---
+
+<LiveCode
+  title="Lifecycle - After"
+  code={require('!raw-loader!./live-coding/lifecycle/after')}
+/>
+
+---
+
+## Let's refactor...
+
+1. State
+2. Refs and Instance Attributes
+3. Lifecycle Methods
+4. [_Higher-Order Components_](#15)
+5. Render Props
+6. Context API
+7. Reducers
+8. Redux
+
+---
+
+<LiveCode
+  title="HoCs - Before"
+  code={require('!raw-loader!./live-coding/hocs/before')}
+/>
+
+---
+
+<LiveCode
+  title="HOCs - After"
+  code={require('!raw-loader!./live-coding/hocs/after')}
+/>
+
+---
+
+## Let's refactor...
+
+1. State
+2. Refs and Instance Attributes
+3. Lifecycle Methods
+4. Higher-Order Components
+5. [_Render Props_](#21)
+6. Context API
+7. Reducers
+8. Redux
+
+---
+
+<LiveCode
+  title="Render Props - Before"
+  code={require('!raw-loader!./live-coding/render-props/before')}
+/>
+
+---
+
+<LiveCode
+  title="Render Props - After"
+  code={require('!raw-loader!./live-coding/render-props/after')}
+/>
+
+---
+
+## Let's refactor...
+
+1. State
+2. Refs and Instance Attributes
+3. Lifecycle Methods
+4. Higher-Order Components
+5. Render Props
+6. [_Context API_](#24)
+7. Reducers
+8. Redux
+
+---
+
+<LiveCode
+  title="Context - Before"
+  code={require('!raw-loader!./live-coding/context/before')}
+/>
+
+---
+
+<LiveCode
+  title="Context  - After"
+  code={require('!raw-loader!./live-coding/context/after')}
+/>
+
+---
+
+## Let's refactor...
+
+1. State
+2. Refs and Instance Attributes
+3. Lifecycle Methods
+4. Higher-Order Components
+5. Render Props
+6. Context API
+7. [_Reducers_](#27)
+8. Redux
+
+---
+
+<LiveCode
+  title="Reducers - Before"
+  code={require('!raw-loader!./live-coding/reducers/before')}
+/>
+
+---
+
+<LiveCode
+  title="Reducers - After"
+  code={require('!raw-loader!./live-coding/reducers/after')}
+/>
+
+---
+
+## Let's refactor...
+
+1. State
+2. Refs and Instance Attributes
+3. Lifecycle Methods
+4. Higher-Order Components
+5. Render Props
+6. Context API
+7. Reducers
+8. [_Redux_](#30)
+
+---
+
+<LiveCode
+  title="Redux - Before"
+  code={require('!raw-loader!./live-coding/redux/before')}
+/>
+
+---
+
+<LiveCode
+  title="Redux - After"
+  code={require('!raw-loader!./live-coding/redux/after')}
+/>
+
+---
+
+## Hooks:
+
+- Simplify and [organize](https://github.com/rehooks/awesome-react-hooks) code
+- Are [composable](https://reactjs.org/docs/hooks-custom.html)
+- Will give [performance](https://blog.kentcdodds.com/react-hooks-whats-going-to-happen-to-render-props-8ade1f00f159) gains
+- Are subject to [rules](https://reactjs.org/docs/hooks-rules.html)
+- Are still completely [optional](https://reactjs.org/docs/hooks-intro.html#gradual-adoption-strategy)
+- Will [not](https://blog.kentcdodds.com/react-hooks-whats-going-to-happen-to-render-props-8ade1f00f159) replace everything else
+
