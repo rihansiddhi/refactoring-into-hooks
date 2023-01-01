@@ -18,12 +18,12 @@
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.3.3",
     "@babel/standalone": "^7.3.3",
-    "css-loader": "^2.1.0",
-    "mdx-deck": "^1.6.7",
+    "css-loader": "^6.7.3",
+    "mdx-deck": "^4.1.1",
     "mdx-deck-live-code": "^1.0.1",
-    "raw-loader": "^1.0.0",
-    "style-loader": "^0.23.1",
-    "url-loader": "^1.1.2"
+    "raw-loader": "^4.0.2",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1"
   },
   "name": "refactoring-into-react-hooks",
   "dependencies": {
